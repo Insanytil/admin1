@@ -1,0 +1,19 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+0.168.192.in-addr.arpa	IN SOA	soa.woodytoys.lab. admin.woodytoys.lab. (
+				2024121002 ; serial
+				3600       ; refresh (1 hour)
+				1800       ; retry (30 minutes)
+				1209600    ; expire (2 weeks)
+				86400      ; minimum (1 day)
+				)
+			NS	soa.woodytoys.lab.
+$ORIGIN 0.168.192.in-addr.arpa.
+1			PTR	dhcp.woodytoys.lab.
+$TTL 3600	; 1 hour
+14			PTR	direction.woodytoys.lab.
+$TTL 86400	; 1 day
+2			PTR	resolv.woodytoys.lab.
+3			PTR	soa.woodytoys.lab.
+4			PTR	www.woodytoys.lab.
+5			PTR	mail.woodytoys.lab.
