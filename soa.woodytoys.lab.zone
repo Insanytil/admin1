@@ -1,0 +1,27 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+woodytoys.lab		IN SOA	soa.woodytoys.lab. admin.woodytoys.lab. (
+				2024121005 ; serial
+				3600       ; refresh (1 hour)
+				1800       ; retry (30 minutes)
+				1209600    ; expire (2 weeks)
+				86400      ; minimum (1 day)
+				)
+			NS	soa.woodytoys.lab.
+$ORIGIN woodytoys.lab.
+$TTL 3600	; 1 hour
+atelier			A	192.168.0.15
+			DHCID	( AAABb4bwxH7sMd7ZHezJfHuxf1nQ+oBUWEzroAgsbm79
+				5L4= ) ; 0 1 32
+$TTL 86400	; 1 day
+dhcp			A	192.168.0.1
+$TTL 3600	; 1 hour
+direction		A	192.168.0.14
+			DHCID	( AAAB5iXxwbGo6wLPjANHIGfRY4qj86zUNi/Q50U5kJok
+				7yc= ) ; 0 1 32
+$TTL 86400	; 1 day
+mail			A	192.168.0.5
+resolv			A	192.168.0.2
+soa			A	192.168.0.3
+www			A	192.168.0.4
+
